@@ -3,37 +3,37 @@ export const Produtos = [
     foto: "/noiva.webp",
     nome: "Noiva",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
   {
     foto: "/casamento.jpg",
     nome: "Casamento",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
   {
     foto: "/formatura.webp",
     nome: "Formatura",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
   {
     foto: "/ensaio.jpg",
     nome: "Ensaio",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
   {
     foto: "/aniversario.jpg",
     nome: "Aniversários",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
   {
     foto: "/casual.webp",
     nome: "Casual",
     descricao: "",
-    valor: "150,00"
+    valor: ""
   },
 
 ]

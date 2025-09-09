@@ -1,37 +1,37 @@
 export const Horarios = [
     { 
       dia: "Segunda",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Terça",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Quarta",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Quinta",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Sexta",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Sábado",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     },
     {
       dia: "Domingo",
-      horaA: "07:00",
-      horaB: "23:00"
+      horaA: "00:00",
+      horaB: "23:59"
     }
   ]

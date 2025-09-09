@@ -6,10 +6,10 @@ export default function Card({foto, nome, descricao, preco, Status, onClick}){
           <img src={foto} alt="" className="rounded-xl w-full h-[200px]" />
         </div>
         <div className="Text flex flex-col justify-center items-center text-center">
-          <span className="cursor-default font-bold text-white text-xl">{nome}</span>
+          <span className="cursor-default font-bold text-white text-base md:text-xl">{nome}</span>
           <span className="cursor-default text-white text-sm">{descricao}</span>
           <div className="w-full flex justify-center items-center">
-            <span className="cursor-default flex text-center font-bold text-white text-base">{`A partir de R$`}{preco}</span>
+            <span className="cursor-default flex text-center font-bold text-white text-base hidden">{`A partir de R$`}{preco}</span>
           </div>
         </div>
         <div className="Action flex justify-center items-center w-full mt-[10px]">
