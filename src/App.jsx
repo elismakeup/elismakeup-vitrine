@@ -63,7 +63,7 @@ function App() {
       const novosProdutosSelecionados = [...ProdutosSelecionados, produto];
       setProdutosSelecionados(novosProdutosSelecionados);
 
-      const itens = novosProdutosSelecionados.map(item => `[${item.nome}, A partir de ${item.valor}]`);
+      const itens = novosProdutosSelecionados.map(item => `[Maquiagem ${item.nome === "Casual" ? ("") : ("para")} ${item.nome}]`);
 
       const listaDeItens = itens.join('\n');
 
