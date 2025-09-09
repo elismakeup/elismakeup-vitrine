@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "animate.css";
+
+
+.bg-gold{
+  background-color: #fcc200;
+}
+
+.text-gold{
+  color: #fcc200;
+}
+
+.border-gold{
+  border-color: #fcc200;
+}
+
+.text-gold-H:hover{
+  color: white;
+}
+
+.border-gold-H:hover{
+  border-color: white;
+}

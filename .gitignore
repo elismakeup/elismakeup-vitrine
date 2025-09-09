@@ -1,0 +1,72 @@
+# =========================================
+# Arquivo .gitignore para projetos React (NPM)
+# =========================================
+
+# Dependências
+# A pasta mais importante a ser ignorada. Ela pode ter milhares de arquivos
+# e pode ser completamente recriada com o comando `npm install`.
+/node_modules
+
+# Arquivos de Build e Produção
+# Pastas geradas pelo processo de build (Create React App, Vite, etc.).
+# Não devem ser versionadas, pois são o resultado final do código-fonte.
+/build
+/dist
+/.vite
+/.output
+/.next
+
+# Logs
+# Arquivos de log gerados pelo NPM, Yarn ou outras ferramentas.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Variáveis de Ambiente
+# EXTREMAMENTE IMPORTANTE: Contém chaves de API, senhas e outras informações
+# sensíveis. NUNCA devem ser enviadas para o repositório.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Exceção para o arquivo de exemplo de variáveis de ambiente.
+# Este arquivo NÃO contém segredos, apenas um modelo de quais variáveis
+# são necessárias no projeto.
+!/.env.example
+!/.env.template
+
+# Arquivos de IDE e Editores de Código
+# Configurações pessoais do seu editor que não são relevantes para outros
+# desenvolvedores do projeto.
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Arquivos de Sistema Operacional
+# Arquivos gerados automaticamente pelo macOS, Windows ou Linux.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Relatórios de Testes
+# Pasta gerada por ferramentas de teste como Jest para mostrar a cobertura
+# de código. É gerada a cada vez que os testes rodam.
+/coverage
+
+# Arquivos temporários e de cache
+# Arquivos gerados por diversas ferramentas para acelerar processos.
+.tmp
+*.cache
+.eslintcache
+
+# Arquivos do pnpm (se aplicável)
+.pnpm-store
