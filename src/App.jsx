@@ -81,7 +81,7 @@ function App() {
     <>
       
 
-      <main className='w-dvw min-h-dvh px-2 py-8 md:px-[5rem] md:py-[2rem] flex items-center justify-center bg-[url("/fundo.jpg")] bg-cover bg-center bg-no-repeat'>
+      <main className='w-dvw min-h-dvh px-2 py-8 md:px-[5rem] md:py-[2rem] flex items-center justify-center'>
         <div className='bg-neutral-900 border-2 border border-fuchsia-700 rounded-2xl p-4 sm:p-8 relative w-full max-w-4xl overflow-hidden'>
           
           <div 
