@@ -2,14 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Card from './components/Card'
 import { Horarios } from './db/horarios';
 import { Produtos } from './db/produtos';
-import Popup from './components/Popup';
 
 function App() {
 
   const [Status, setStatus] = useState('');
 
-  const [ShowPopup, setShowPopup] = useState(false);
-  const [Animacao, setAnimacao] = useState('');
 
   const [ProdutosSelecionados, setProdutosSelecionados] = useState([]) 
 
@@ -51,18 +48,7 @@ function App() {
     const intervalo = setInterval(verificarStatus, 60000)
 
     return () => clearInterval(intervalo);
-  }, [])
-
-
-  const handlerHorarios = () => {
-    setAnimacao('animate__animated animate__fadeIn')
-    setShowPopup(true);
-  }
-
-  const handlerCloseHorarios = () => {
-    setAnimacao('animate__animated animate__fadeOut')
-    setTimeout(() => {setShowPopup(false)}, 500)
-  } 
+  }, []) 
 
   const ProdutoMensagem = (foto, nome, valor) => {
     const produtoEmCarrinho = ProdutosSelecionados.find(item => item.nome === nome);
@@ -94,13 +80,6 @@ function App() {
     return (
     <>
       
-      {ShowPopup && (
-        <>
-          <Popup onClick={handlerCloseHorarios} animacao={Animacao} />
-        </>
-      )
-      }
-
 
       <main className='w-dvw min-h-dvh px-2 py-8 md:px-[5rem] md:py-[2rem] flex items-center justify-center bg-[url("/fundo.jpg")] bg-cover bg-center bg-no-repeat bg-fixed'>
         <div className='bg-neutral-900 border-2 border border-fuchsia-700 rounded-2xl p-4 sm:p-8 relative w-full max-w-4xl overflow-hidden'>
@@ -137,12 +116,10 @@ function App() {
             </div>
             <div className='Text flex flex-col justify-center items-center text-center space-y-2'>
               <span className='cursor-default text-white font-bold text-3xl tracking-wider'>ElisMakeup</span>
-              <span className='cursor-default text-white font-bold text-md tracking-wider'>📍DF - Brasília</span>
               <span className='cursor-default text-white font-bold text-sm tracking-wider'>Atendimento a domicílio e salão</span>
+              <span className='cursor-default text-white font-bold text-md tracking-wider'>📍DF - Brasília</span>
+
               <span className='cursor-default text-white'>Estou:  <span className={`font-bold cursor-default ${Status === 'Disponível' ? "text-green-500" : "text-red-500"}`} >{Status}</span></span>
-              <div className='flex justify-center items-center'>
-                <button className='bg-transparent hidden hover:bg-gold border border-gold p-2 cursor-pointer rounded-lg text-white hover:bg-neutral-800  transition-colors duration-300' onClick={handlerHorarios}>Ver horários</button>
-              </div>
             </div>
             <div className='Social flex justify-center items-center py-2'>
               <div className='p-2 rounded-lg flex justify-center items-center px-6 sm:px-8 gap-6 border border-fuchsia-700'>
