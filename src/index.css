@@ -29,7 +29,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  background-color: #171717; 
+  background-color: #171717;
+
+  overflow-x: hidden;
 }
 
 html, body{
