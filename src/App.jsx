@@ -125,7 +125,7 @@ function App() {
               height: '400px',
               top: '0px',
               right: '0px',
-              background: 'radial-gradient(ellipse at center, rgba(252, 194, 0, 0.25) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse at center, rgba(255, 255, 255, 0.25) 0%, transparent 70%)',
               filter: 'blur(48px)',
               transform: 'translate(50%, 20%)'
             }}
