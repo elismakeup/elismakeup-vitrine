@@ -21,3 +21,7 @@
 .border-gold-H:hover{
   border-color: white;
 }
+
+body {
+  background-color: #171717; 
+}
