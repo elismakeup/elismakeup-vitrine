@@ -116,7 +116,7 @@ function App() {
             </div>
             <div className='Text flex flex-col justify-center items-center text-center space-y-2'>
               <span className='cursor-default text-white font-bold text-3xl tracking-wider'>ElisMakeup</span>
-              <span className='cursor-default text-white font-bold text-sm tracking-wider'>Atendimento a domicílio e salão</span>
+              <span className='cursor-default text-white font-bold text-sm tracking-wider'>Atendimento em domicílio e salão</span>
               <span className='cursor-default text-white font-bold text-md tracking-wider'>📍DF - Brasília</span>
 
               <span className='cursor-default text-white'>Estou:  <span className={`font-bold cursor-default ${Status === 'Disponível' ? "text-green-500" : "text-red-500"}`} >{Status}</span></span>
