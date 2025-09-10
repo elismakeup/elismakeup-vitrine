@@ -60,7 +60,7 @@ function App() {
         valor: valor,
       }
 
-      const novosProdutosSelecionados = [...ProdutosSelecionados, produto];
+      const novosProdutosSelecionados = [produto];
       setProdutosSelecionados(novosProdutosSelecionados);
 
       const itens = novosProdutosSelecionados.map(item => `[Maquiagem ${item.nome === "Casual" ? ("") : ("para")} ${item.nome}]`);
